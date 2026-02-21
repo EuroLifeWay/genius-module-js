@@ -76,5 +76,11 @@
 // // За допомогою циклу  “for…in” вивести в консоль ключі і значення об*єкта
 
 // for (let key in user) {
-//   console.log(key, user[key]);
+//   console.log(key + ': ' + user[key]);
 // }
+
+for (let key in user) {
+  if (Object.hasOwn(user, key)) {
+    console.log(key + ': ' + user[key]);
+  }
+}
