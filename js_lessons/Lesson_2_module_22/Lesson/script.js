@@ -1,3 +1,6 @@
+
+https://drive.google.com/open?id=1KgvKcnRGdWLZOVUE1r4rg8ZcS69sLrt5&usp=drive_fs
+https://drive.google.com/open?id=1soBmIGn60dExbdhO5vLnSjJC5m4ibLYm&usp=drive_fs
 // ----------------------------------//
 // ----------------------------------//
 // Вивід данних/ Ввід данних
