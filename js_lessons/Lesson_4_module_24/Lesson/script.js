@@ -143,6 +143,32 @@
 
 // getName(hello);
 
+// const hello = function (name) {
+//   console.log(`Hello, ${name}`);
+// };
+
+// const getName = function (hello) {
+//   const name = 'Ivan';
+//   hello(name);
+// };
+
+// getName(hello);
+
+// // console.log(hello(getName)); // вернет код функции
+
+// ------------- Anonim Function ------------ //
+// const getName = function (callback) {
+//   const name = 'Ivan';
+//   callback(name);
+// };
+// // 1.
+// getName(function (name) {
+//   console.log(`Привет, ${name}! Это анонимный вызов.`);
+// });
+// // 2.
+// getName(name => console.log(`Yo, ${name}!`));
+
+// ------------------------ //
 // function checkAge(age) {
 //   if (age >= 18) {
 //     return console.log('Hello');
@@ -152,6 +178,7 @@
 
 // checkAge(18);
 
+// ------------------------ //
 // function showMovie(age) {
 //   if (age < 21) return;
 //   return console.log('Go to movie');
