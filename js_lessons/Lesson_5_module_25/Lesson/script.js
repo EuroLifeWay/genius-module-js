@@ -37,6 +37,61 @@
 // // ----- Fast method ----- //
 // createNewSum(5)();
 
+// ------------------------------------------------ //
+// function f() {
+//   let value = 123;
+
+//   return function () {
+//     alert(value);
+//   };
+// }
+
+// let g = f(); // g.[[Environment]] зберігає посилання на лексичне середовище
+// // відповідного виклику f()
+
+// ====== //
+// function f() {
+//   let value = Math.random();
+
+//   return function () {
+//     alert(value);
+//   };
+// }
+
+// // три функції в масиві, кожна з яких пов’язана з лексичним середовищем
+// // відповідного виклику f()
+// // f()();
+// let arr = [f(), f(), f()];
+// arr[0]();
+
+// ====== //
+// function f() {
+//   let value = 123;
+
+//   return function () {
+//     alert(value);
+//   };
+// }
+
+// let g = f(); // поки функція g існує, значення залишається в пам’яті
+// g();
+
+// g = null; // ...і тепер пам’ять очищена
+
+// === debugger === //
+// function f() {
+//   let value = Math.random();
+
+//   function g() {
+//     debugger; // в консолі введіть: alert(value); і ви побачите, що такої змінної немає!
+//   }
+
+//   return g;
+// }
+
+// let g = f();
+// g();
+
 // ------------------------ //
 // function createNewNumber(n) {
 //   return function (number) {
@@ -47,6 +102,8 @@
 // const addFive = createNewNumber(5);
 
 // console.log(addFive(10));
+
+// // console.log(createNewNumber(5)(10));
 
 // ------------------------ //
 // function createUrl(domain) {
@@ -411,3 +468,5 @@
 
 // console.log(counter()); // ? 0
 // console.log(counter()); // 1
+
+// ------------------- //

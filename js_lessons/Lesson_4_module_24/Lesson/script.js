@@ -105,6 +105,7 @@
 
 // // addName();
 // addName(1, 2, 3);
+// // addName({ a: 1, b: 2, c: 3 });
 
 //#endregion
 
@@ -239,21 +240,21 @@ Stack frame */
 //#region
 // ------------- Site Form Examole ------------ //
 
-// console.log(document);
+// // console.log(document);
 
-const addSum = number => {
-  sum = Number(number) + 10;
-  return console.log(sum);
-};
+// const addSum = number => {
+//   sum = Number(number) + 10;
+//   return console.log(sum);
+// };
 
-const numberRef = document.querySelector("input[name='number']");
-// console.log(numberRef.value);
+// const numberRef = document.querySelector("input[name='number']");
+// // console.log(numberRef.value);
 
-const buttonRef = document.querySelector('button');
-// console.log(buttonRef);
+// const buttonRef = document.querySelector('button');
+// // console.log(buttonRef);
 
-// buttonRef.addEventListener('click', () => {
-//   console.log(numberRef.value);
-// });
+// // buttonRef.addEventListener('click', () => {
+// //   console.log(numberRef.value);
+// // });
 
-buttonRef.addEventListener('click', () => addSum(numberRef.value));
+// buttonRef.addEventListener('click', () => addSum(numberRef.value));

@@ -1,6 +1,5 @@
-
-https://edu.genius.space/uk/courses/fullstack20/module/modul23/lesson/modul-23
-https://drive.google.com/open?id=11q2ZB2LSDUiilHS6qBLWoGNCqZrwyx0M&usp=drive_fs
+// https://edu.genius.space/uk/courses/fullstack20/module/modul23/lesson/modul-23
+// https://drive.google.com/open?id=11q2ZB2LSDUiilHS6qBLWoGNCqZrwyx0M&usp=drive_fs
 // --------------------------//
 // --------------------------//
 // області видимості
