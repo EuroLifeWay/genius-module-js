@@ -49,8 +49,6 @@
 // let user = {};  // синтаксис "літералу об’єкта"
 // ------------------------------------------------ //
 
-// Object();
-
 // let ob = new Object();
 
 // ob.property = 'тест';
@@ -59,15 +57,19 @@
 // console.log(ob);
 // console.log(ob.property);
 
-// // Object.create();
-
 //#region
 // ---------------- Object.create() ---------------- //
 // var ob = Object.create(null, { property: { value: 'тест' } });
 // // alert(ob.property);
 // console.log(ob.property);
 
-// літеральний спосіб
+// // Object.create(proto, [descriptors]) – створює пустий об’єкт
+// // з властивістю [[Prototype]], що
+// // посилається на переданий об’єкт proto, та необов’язковими для передачі
+// // дескрипторами властивостей descriptors.
+// console.log(Object.getPrototypeOf(ob));
+
+// ------ літеральний спосіб ------ //
 // var ob = { property: 'тест' };
 // // alert( ob.property );
 // console.log(ob.property);
@@ -81,31 +83,31 @@
 
 //#region
 // ------------------- Class ------------------- //
-// class myOb {
-//   constructor() {
-//     this.property = 'тест'; // свойство
-//   }
-// }
-// var ob = new myOb();
+class myOb {
+  constructor() {
+    this.property = 'тест'; // свойство
+  }
+}
+var ob = new myOb();
 // console.log(ob.property);
 
 // ------------------- //
-// class User {
-//   constructor(name) {
-//     this.name = name; // свойство
-//   }
+class User {
+  constructor(name) {
+    this.name = name; // свойство
+  }
 
-//   // метод
-//   sayHi() {
-//     console.log(`Привет, я ${this.name}`);
-//   }
-// }
+  // метод
+  sayHi() {
+    console.log(`Привет, я ${this.name}`);
+  }
+}
 
-// let user = new User('Иван'); // создание объекта (экземпляра)
-// user.sayHi(); // Привет, я Иван
+let user = new User('Иван'); // создание объекта (экземпляра)
+user.sayHi(); // Привет, я Иван
 
-// const admin = new User('Алексей'); // создание объекта (экземпляра)
-// admin.sayHi(); // Привет, я Алексей
+const admin = new User('Алексей'); // создание объекта (экземпляра)
+admin.sayHi(); // Привет, я Алексей
 
 //#region
 // -------------- NewClass extends (Super)Class -------------- //
