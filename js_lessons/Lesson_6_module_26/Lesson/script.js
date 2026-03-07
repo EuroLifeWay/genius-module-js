@@ -83,31 +83,31 @@
 
 //#region
 // ------------------- Class ------------------- //
-class myOb {
-  constructor() {
-    this.property = 'тест'; // свойство
-  }
-}
-var ob = new myOb();
+// class myOb {
+//   constructor() {
+//     this.property = 'тест'; // свойство
+//   }
+// }
+// var ob = new myOb();
 // console.log(ob.property);
 
 // ------------------- //
-class User {
-  constructor(name) {
-    this.name = name; // свойство
-  }
+// class User {
+//   constructor(name) {
+//     this.name = name; // свойство
+//   }
 
-  // метод
-  sayHi() {
-    console.log(`Привет, я ${this.name}`);
-  }
-}
+//   // метод
+//   sayHi() {
+//     console.log(`Привет, я ${this.name}`);
+//   }
+// }
 
-let user = new User('Иван'); // создание объекта (экземпляра)
-user.sayHi(); // Привет, я Иван
+// let user = new User('Иван'); // создание объекта (экземпляра)
+// user.sayHi(); // Привет, я Иван
 
-const admin = new User('Алексей'); // создание объекта (экземпляра)
-admin.sayHi(); // Привет, я Алексей
+// const admin = new User('Алексей'); // создание объекта (экземпляра)
+// admin.sayHi(); // Привет, я Алексей
 
 //#region
 // -------------- NewClass extends (Super)Class -------------- //

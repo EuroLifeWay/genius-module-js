@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeWork_7</title>
+  </head>
+  <body id="test">
+    <h1>HomeWork_7</h1>
+    <div id="id_menu" data-widget-name="menu">Виберіть жанр</div>
+    <script>
+      // ------------- Problem 1/ Method 1 ------------- //
+      // const widgetElement = document.querySelector('[data-widget-name="menu"]');
+      const widget = document.querySelector('[data-widget-name]');
+      const attrName = widget.getAttribute('data-widget-name');
+      console.log('Attribute Name is:', attrName);
+
+      // Ig need textContent of element
+      console.log('Content:', widget.textContent);
+
+      // ------------- Problem 1/ Method 2 ------------- //
+      // /* dataset.widgetName — сучасний стандарт для роботи з data-* атрибутами.
+      // Зверніть увагу: в JS назва перетворюється з kebab-case (data-widget-name)
+      // у camelCase (widgetName). */
+
+      // const widget = document.querySelector('[data-widget-name]');
+      // const widgetName = widget.dataset.widgetName;
+
+      // console.log('Attribute Name is:', widgetName);
+      // console.log('Content:', widget.textContent);
+
+      // ------------- Problem 1/ Method 3 ------------- //
+      // const allDivs = document.getElementsByTagName('div');
+      // for (let div of allDivs) {
+      //   if (div.hasAttribute('data-widget-name')) {
+      //     console.log('Attribute Name is:', div.getAttribute('data-widget-name'));
+      //     console.log('Content:', div.textContent);
+      //   }
+      // }
+    </script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
