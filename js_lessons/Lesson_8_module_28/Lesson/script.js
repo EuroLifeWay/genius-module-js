@@ -121,12 +121,12 @@
 // document.body.append(div);
 
 // -------------- .insertAdjacentHTML -------------- //
-const list = document.querySelector('#list');
+// const list = document.querySelector('#list');
 
-list.insertAdjacentHTML('beforebegin', '<p>beforebegin</p>');
-list.insertAdjacentHTML('afterbegin', '<li>afterbegin</li>');
-list.insertAdjacentHTML('beforeend', '<li>beforeend</li>');
-list.insertAdjacentHTML('afterend', '<p>afterend</p>');
+// list.insertAdjacentHTML('beforebegin', '<p>beforebegin</p>');
+// list.insertAdjacentHTML('afterbegin', '<li>afterbegin</li>');
+// list.insertAdjacentHTML('beforeend', '<li>beforeend</li>');
+// list.insertAdjacentHTML('afterend', '<p>afterend</p>');
 
 // --------------
 // const body = document.body;
