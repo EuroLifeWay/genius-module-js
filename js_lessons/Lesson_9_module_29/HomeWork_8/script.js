@@ -4,12 +4,12 @@
 // Напишіть такий JavaScript, щоб після натискання
 // на кнопку button, елемент <div id="text"> зникав.
 
+// const btn = document.querySelector('#btn');
+// const text = document.querySelector('#text');
+
 //#region
 // ------------- Problem 1/ Method 1 ------------- //
 // debugger;
-
-// // const btn = document.querySelector('#btn');
-// // const text = document.querySelector('#text');
 
 // btn.onclick = () => text.classList.toggle('is-hidden');
 
@@ -40,6 +40,19 @@
 // };
 
 // btn.addEventListener('click', handleClick);
+
+//#region
+// ------------- Problem 1/ Method 5 ------------- //
+// debugger;
+
+// btn.addEventListener('click', function (event) {
+//   let id = event.target.dataset.toggleId;
+//   console.log(id);
+//   if (!id) return;
+
+//   let elem = document.getElementById(id);
+//   elem.hidden = !elem.hidden;
+// });
 
 //#region ------------------------------------------------------ //
 // ------------------------- Problem 2 ------------------------- //

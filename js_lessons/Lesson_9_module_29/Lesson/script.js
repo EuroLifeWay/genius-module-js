@@ -87,11 +87,11 @@
 // item.addEventListener('click', () => console.log('Click item'));
 
 // -------  ------- //
-const handleClick = event => {
-  console.log('event:', event.target);
-};
+// const handleClick = event => {
+//   console.log('event:', event.target);
+// };
 
-parent.addEventListener('click', handleClick);
+// parent.addEventListener('click', handleClick);
 
 // ------- event.stopPropagation() ------- //
 // event.stopPropagation() останавливает всплытие событий в DOM,
