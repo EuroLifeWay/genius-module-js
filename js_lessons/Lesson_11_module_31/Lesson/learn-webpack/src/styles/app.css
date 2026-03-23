@@ -1,0 +1,19 @@
+div {
+  background-color: burlywood;
+  padding: 10px;
+}
+
+.settingIcon {
+  background-image: url('../assets/images/settings.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+.bgc-green {
+  background-color: #99cc00;
+  padding: 10px;
+  color: blue;
+}

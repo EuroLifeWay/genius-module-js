@@ -1,0 +1,33 @@
+{
+  "name": "learn-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "_type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "__start": "webpack ./src/scripts/app.js --output-filename app.bundle.js --output-path ./dist --mode development",
+    "_start": "webpack ./src/scripts/app.js -o ./dist --output-filename app.bundle.js --mode development",
+    "-start": "webpack --config ./webpack/webpack.config.js",
+    "start": "webpack serve --config ./webpack/webpack.config.js --mode development",
+    "build": "NODE_ENV=production webpack --config ./webpack/webpack.config.js --mode production",
+    "-for-win-build": "cross-env NODE_ENV=production webpack --config ./webpack/webpack.config.js --mode production"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^14.0.0",
+    "css-loader": "^7.1.4",
+    "mini-css-extract-plugin": "^2.10.1",
+    "sass": "^1.98.0",
+    "sass-loader": "^16.0.7",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^7.0.2",
+    "webpack-dev-server": "^5.2.3"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^5.6.6"
+  }
+}

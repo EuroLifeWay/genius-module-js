@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h1><%= htmlWebpackPlugin.options.myPageHeader %></h1>
+    <h3>Welcome to the Awesome application</h3>
+
+    <div>
+      <div style="display: inline-block; padding: 10px">
+        <img id="home" height="75px" width="75px" />
+      </div>
+      <div class="settingIcon"></div>
+    </div>
+
+    <h2>File-loader for large size images</h2>
+    <img id="frontImg" style="height: 400px; width: 600px" />
+
+    <h2>Copy all images/files to a folder using copy-webpack-plugin</h2>
+    <div>
+      <div style="display: inline-block; padding: 10px">
+        <img height="75px" width="75px" src="./assets/static/home.png" />
+      </div>
+      <div class="settingIcon"></div>
+    </div>
+
+    <img style="height: 400px; width: 600px" src="./assets/static/nature.jpg" />
+
+    <my-app></my-app>
+
+    <div class="bgc-green">
+      <h4>with a green background</h4>
+    </div>
+  </body>
+</html>
