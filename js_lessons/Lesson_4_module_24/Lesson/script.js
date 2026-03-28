@@ -112,21 +112,23 @@
 //#region
 // ------------- callback ------------ //
 
-// function askQuestion(question, yes, no) {
+// debugger;
+
+// function askQuestion(question, name, yes, no) {
 //   if (confirm(question)) {
-//     yes();
-//   } else no();
+//     yes(name);
+//   } else no(name);
 // }
 
-// function showOk() {
-//   console.log('You say Ok');
+// function showOk(name) {
+//   console.log(name + ', You say Ok');
 // }
 
-// function showCancel() {
-//   console.log('You say No');
+// function showCancel(name) {
+//   console.log(name, ', You say No');
 // }
 
-// askQuestion('Yes or No', showOk, showCancel);
+// askQuestion('Yes or No', 'Serhii', showOk, showCancel);
 
 //#endregion
 
