@@ -98,10 +98,10 @@
 // ------------- Problem 3/ Method 1 ------------- //
 // debugger;
 
-function delay(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-delay(3000).then(() => alert('виконалось через 3 секунди'));
+// function delay(ms) {
+//   return new Promise(resolve => setTimeout(resolve, ms));
+// }
+// delay(3000).then(() => alert('виконалось через 3 секунди'));
 
 // // ------ Method 3.1 ------ //
 
