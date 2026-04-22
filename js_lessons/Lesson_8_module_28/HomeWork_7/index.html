@@ -18,7 +18,7 @@
       // // Ig need textContent of element
       // console.log('Content:', widget.textContent);
 
-      // ------------- Problem 1/ Method 2 ------------- //
+      // // ------------- Problem 1/ Method 2 ------------- //
       // /* dataset.widgetName — сучасний стандарт для роботи з data-* атрибутами.
       // Зверніть увагу: в JS назва перетворюється з kebab-case (data-widget-name)
       // у camelCase (widgetName). */
@@ -29,11 +29,14 @@
       // console.log('Attribute Name is:', widgetName);
       // console.log('Content:', widget.textContent);
 
-      // ------------- Problem 1/ Method 3 ------------- //
+      // // ------------- Problem 1/ Method 3 ------------- //
       // const allDivs = document.getElementsByTagName('div');
       // for (let div of allDivs) {
       //   if (div.hasAttribute('data-widget-name')) {
-      //     console.log('Attribute Name is:', div.getAttribute('data-widget-name'));
+      //     console.log(
+      //       'Attribute Name is:',
+      //       div.getAttribute('data-widget-name'),
+      //     );
       //     console.log('Content:', div.textContent);
       //   }
       // }

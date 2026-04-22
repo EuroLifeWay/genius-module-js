@@ -13,9 +13,9 @@
 // debugger;
 
 // class Abonent {
-//   constructor(props) {
-//     this.profile = props;
-//   }
+//     constructor(props) {
+//       this.profile = props;
+//     }
 
 //   name = '';
 //   tel = '';
@@ -27,6 +27,38 @@
 
 //   get profile() {
 //     return `Name: ${this.name}; tel.: ${this.tel}`;
+//   }
+// }
+
+//#region
+// ------------- Problem 1/ Method 1.1 More clean!!! ------------- //
+// class Abonent {
+//   // Объявляем приватные поля
+//   #name;
+//   #tel;
+
+//   constructor({ name, tel }) {
+//     this.name = name; // вызывается сеттер
+//     this.tel = tel; // вызывается сеттер
+//   }
+
+//   set name(newName) {
+//     this.#name = newName;
+//   }
+//   get name() {
+//     return this.#name;
+//   }
+
+//   set tel(newTel) {
+//     this.#tel = newTel;
+//   }
+//   get tel() {
+//     return this.#tel;
+//   }
+
+//   // Метод для красивого вывода в консоль
+//   display() {
+//     console.log(`Abonent -> Name: ${this.#name}, Tel: ${this.#tel}`);
 //   }
 // }
 
@@ -45,27 +77,47 @@
 //   tel: '+380960000002',
 // });
 
-// console.log(Serhii.profile);
-// console.log(Ivan.profile);
-// console.log(Max.profile);
+// // Теперь можно получить просто имя
+// console.log(Serhii.name, Serhii.tel); // "Serhii"
+// console.log(Ivan.name, Ivan.tel); // "Ivan"
+// console.log(Max.name, Max.tel); // "Max"
 
-//#region
-// ------------- Problem 1/ Method 2 (for microservice..) ------------- //
+// // Или вызвать метод для полного вывода
+// Serhii.display(); // "Abonent -> Name: Serhii, Tel: +380960000000"
+// Ivan.display(); // "Abonent -> Name: Ivan, Tel: +380960000001"
+// Max.display(); // "Abonent -> Name: Max, Tel: +380960000002"
+
+// //#region
+// // ------------- Problem 1/ Method 2 (for microservice..) ------------- //
 // class Abonent {
+//   #name;
+//   #tel;
+
 //   constructor(props) {
-//     this.profile = props;
+//     this.profile = props; // Используем сеттер
 //   }
 
-//   name = '';
-//   tel = '';
+//   set name(val) {
+//     this.#name = val;
+//   }
+//   get name() {
+//     return this.#name;
+//   }
 
-//   set profile(data) {
-//     this.name = data.name;
-//     this.tel = data.tel;
+//   set tel(val) {
+//     this.#tel = val;
+//   }
+//   get tel() {
+//     return this.#tel;
+//   }
+
+//   set profile({ name, tel }) {
+//     this.#name = name;
+//     this.#tel = tel;
 //   }
 
 //   get profile() {
-//     return `Name : ${this.name}; tel : ${this.tel}`;
+//     return `Name : ${this.#name}; tel : ${this.#tel}`;
 //   }
 // }
 
@@ -75,14 +127,28 @@
 //   Max: { name: 'Max', tel: '+380960000002' },
 // };
 
-// const directory = {};
-// for (let key in usersData) {
-//   directory[key] = new Abonent(usersData[key]);
-// }
+// // const directory = {};
+// // for (let key in usersData) {
+// //   directory[key] = new Abonent(usersData[key]);
+// // }
+
+// // Более современный способ создания справочника
+// const directory = Object.entries(usersData).reduce((acc, [key, value]) => {
+//   acc[key] = new Abonent(value);
+//   return acc;
+// }, {});
 
 // console.log(directory.Serhii.profile);
 // console.log(directory.Ivan.profile);
 // console.log(directory.Max.profile);
+
+// console.log(directory.Serhii.name, directory.Serhii.tel);
+
+// // 2. Меняем ТОЛЬКО телефон через отдельный сеттер
+// directory.Serhii.tel = '+380001112233';
+
+// // 3. Проверяем результат
+// console.log(directory.Serhii.profile);
 
 // // ------ Method 1.1 ------ //
 

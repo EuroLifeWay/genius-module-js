@@ -23,6 +23,10 @@
 //   if (i % 2 === 0) console.log(i);
 // }
 
+// for (let i = 2; i <= 10; i += 2) {
+//   console.log(i);
+// }
+
 // ------------------------------------ //
 // ------------- Problem 3 ------------ //
 // ------------------------------------ //
@@ -55,6 +59,18 @@
 //   }
 // }
 
+// логіка правильна, але краще явно обробляти null і пустий рядок
+// більш чистий варіант:
+
+// while (true) {
+//   let number = prompt('Enter a number greater than 100');
+//   if (number === null || number.trim() === '') break;
+//   if (Number(number) > 100) {
+//     console.log(number);
+//     break;
+//   }
+// }
+
 // ------------------------------------ //
 // ------------- Problem 5 ------------ //
 // ------------------------------------ //
@@ -70,5 +86,5 @@
 // let ageArr = girls.map(item => item.age);
 // // console.log(ageArr);
 
-// let avarageAge = ageArr.reduce((accum, item) => accum + item) / ageArr.length;
+// let avarageAge = ageArr.reduce((accum, item) => accum + item, 0) / ageArr.length;
 // console.log('The average age of the girls is ', avarageAge);

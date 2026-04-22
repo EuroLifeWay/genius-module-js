@@ -67,7 +67,7 @@
 
 // btn.addEventListener('click', () => btn.classList.toggle('is-hidden'));
 
-//#region
+// #region
 // ------------- Problem 2/ Method 2 ------------- //
 // btn.addEventListener('click', () => (btn.style.display = 'none'));
 
@@ -92,16 +92,16 @@
 //   );
 // };
 
-// // ------ Method 3.2 ------ //
-// // Select all children of the current element
+// // // ------ Method 3.2 ------ //
+// // // Select all children of the current element
 // // const handleClick = event => {
 // //   event.target.querySelectorAll(':scope > *').forEach(child => {
 // //     child.classList.toggle('is-hidden');
 // //   });
 // // };
 
-// // ------ Method 3.3 ------ //
-// // for...of can work with HTMLCollection directly
+// // // ------ Method 3.3 ------ //
+// // // for...of can work with HTMLCollection directly
 // // const handleClick = event => {
 // //   for (const child of event.target.children) {
 // //     child.classList.toggle('is-hidden');

@@ -56,46 +56,46 @@
 // student.infoStudent.apply(students.Petro, [12, 3]);
 
 //#region
-// ------------- Problem 1/ Method 2 ------------- //
-// // ------ Method 1.1 ------ //
-// const student = {
-//   infoStudent: function (averageScore, numberOfMissedLessons) {
-//     console.group(`Student ${this.studentId}: `);
-//     consoleStudent = {
-//       Name: this.name,
-//       Speciality: this.speciality,
-//       'Average Score': averageScore,
-//       'Number of missed lessons': numberOfMissedLessons,
-//     };
-//     console.table(consoleStudent);
-//     // console.table([consoleStudent]); //
-//     console.groupEnd();
-//   },
-// };
-
-// // ------ Method 2.2 ------ //
+// // ------------- Problem 1/ Method 2 ------------- //
+// // // ------ Method 2.1 ------ //
 // // const student = {
 // //   infoStudent: function (averageScore, numberOfMissedLessons) {
 // //     console.group(`Student ${this.studentId}: `);
-// //     consoleStudent = [
-// //       { Description: 'Name', Meaning: this.name },
-// //       { Description: 'Speciality', Meaning: this.speciality },
-// //       { Description: 'Average Score', Meaning: averageScore },
-// //       {
-// //         Description: 'Number of missed lessons',
-// //         Meaning: numberOfMissedLessons,
-// //       },
-// //     ];
-// //     console.table(consoleStudent, ['Description', 'Meaning']);
+// //     const consoleStudent = {
+// //       Name: this.name,
+// //       Speciality: this.speciality,
+// //       'Average Score': averageScore,
+// //       'Number of missed lessons': numberOfMissedLessons,
+// //     };
+// //     console.table(consoleStudent);
+// //     // console.table([consoleStudent]); //
 // //     console.groupEnd();
 // //   },
 // // };
 
-// // ------ Method 2.3 ------ //
+// // ------ Method 2.2 ------ //
+// const student = {
+//   infoStudent: function (averageScore, numberOfMissedLessons) {
+//     console.group(`Student ${this.studentId}: `);
+//     consoleStudent = [
+//       { Description: 'Name', Meaning: this.name },
+//       { Description: 'Speciality', Meaning: this.speciality },
+//       { Description: 'Average Score', Meaning: averageScore },
+//       {
+//         Description: 'Number of missed lessons',
+//         Meaning: numberOfMissedLessons,
+//       },
+//     ];
+//     console.table(consoleStudent, ['Description', 'Meaning']);
+//     console.groupEnd();
+//   },
+// };
+
+// // // ------ Method 2.3 ------ //
 // // const student = {
 // //   infoStudent: function (averageScore, numberOfMissedLessons) {
 // //     console.group(`Student ${this.studentId}: `);
-// //     consoleStudent = {
+// //     const consoleStudent = {
 // //       Name: this.name,
 // //       Speciality: this.speciality,
 // //       'Average Score': averageScore,
@@ -191,7 +191,7 @@
 //   return Math.round(weight * price * 100) / 100;
 // }
 
-// const Cost = {
+// const cost = {
 //   costProduct(weight) {
 //     const cost = calculateCost(this.price, weight);
 //     console.log(`${this.name} cost ${cost} UAH per ${weight} kg.`);
@@ -213,9 +213,9 @@
 //   price: 89,
 // };
 
-// Cost.costProduct.call(banana, 4.5);
-// Cost.costProduct.call(cherry, 1.3);
-// Cost.costProduct.call(orange, 3.4);
+// cost.costProduct.call(banana, 4.5);
+// cost.costProduct.call(cherry, 1.3);
+// cost.costProduct.call(orange, 3.4);
 
 // ------------------------------------ //
 // ------------------------------------ //

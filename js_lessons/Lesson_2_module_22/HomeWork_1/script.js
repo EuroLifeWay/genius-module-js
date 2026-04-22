@@ -111,6 +111,9 @@
 // ------------- Method 1 ------------ //
 // let num = prompt('Please enter a 3-digit number');
 // num = Number(Math.abs(num));
+// || //
+// let num = Number(prompt('Please enter a 3-digit number'));
+// num = Math.abs(num); // уникаємо зайвих перетворень
 
 // if (num.toString().length === 3 && !isNaN(Number(num))) {
 //   console.log('foo');
